@@ -1,11 +1,11 @@
-import 'package:first_app/Gradient_container.dart';
+import 'package:first_app/gradient_container.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        body: GradientContainer(),
+        body: GradientContainer(Alignment.topLeft, Alignment.bottomRight),
       ),
     ),
   );
