@@ -19,7 +19,12 @@ Alignment endAlignment;
           ],
         ),
       ),
-      child: Centered("Welcome ITEC 315"),
+     child: Center (
+      
+     )
+      child: Image.asset(
+        'assets/images/dice-2.pnp'),
+        width:200,
     );
   }
 }
