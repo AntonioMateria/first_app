@@ -8,7 +8,11 @@ Alignment endAlignment;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    var activeDiceImage = 'assets/images/dice-2.png';
+    void rollDice() {
+      activeDiceImage = 'assets/images/dice-4.png';
+    }
+    eturn Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: startAlignment,
@@ -19,12 +23,7 @@ Alignment endAlignment;
           ],
         ),
       ),
-     child: Center (
-      
-     )
-      child: Image.asset(
-        'assets/images/dice-2.pnp'),
-        width:200,
+      child: const Center(
+        child: DiceRoller(),
+      ),
     );
-  }
-}
